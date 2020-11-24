@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>car parameters</title>
+</head>
+
+<body>
+    <form action="send.php" name="car parameters" method="POST">
+        <fieldset>
+            <fieldset>
+                <legend><h3>Параметры автомобиля:</h3></legend>
+                    <label for="model">Марка автомобиля:</label>
+                    <input type="text" name="model" id="model">
+
+                <p><label for="v_motor">Объем двигателя, см <sup>3</sup></label>
+                    <input type="text" name="v_motor" id="v_motor" placeholder="1900">
+
+                <p>Область:
+                <select name="region" size="1">
+                    <option selected value="Brest">Брестская</option>
+                    <option value="Vitebsk">Витебская</option>
+                    <option value="Gomel">Гомельская</option>
+                    <option value="Grodno">Гродненская</option>
+                    <option value="Minsk">Минская</option>
+                    <option value="Mogilev">Могилевская</option>
+                </select>
+
+                <p>Тип КПП:<br>
+                <input type="radio" name="gear_box" value="auto">Автомат<br>
+                <input type="radio" name="gear_box" value="mech">Механика
+
+                <p>Двигатель<br>
+                <input type="checkbox" name="motor" value="electro">Электро<br>
+                <input type="checkbox" name="motor" value="diesel">Дизель<br>
+                <input type="checkbox" name="motor" value="benzine">Бензин<br>
+                <input type="checkbox" name="motor" value="propan-butan">Пропан-бутан<br>
+                <input type="checkbox" name="motor" value="metan">Метан
+
+                <p>Описание<br>
+                <textarea name="discription" cols="30" rows="10"></textarea>
+
+                <p><input type="submit" value="Отправить">
+                    <input type="reset" value="Очистить">
+
+
+            </fieldset>
+        </fieldset>
+
+    </form>
+
+
+</body>
+
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enrollment_in_courses</title>
+</head>
+
+<body>
+    <form action="send.php" name="enrollment_in_courses" method="POST">
+        <fieldset>
+            <p><strong>Запись на курсы</strong></p>
+            <hr>
+
+            <p><label for="name">Имя:</label><br>
+                <input type="text" name="name" id="name">
+
+            <p>Язык программирования:<br>
+                <input type="radio" name="prog_lang" value="C++">C++ <br>
+                <input type="radio" name="prog_lang" value="PHP">PHP <br>
+                <input type="radio" name="prog_lang" value="Python">Python
+
+            <p><label for="about_me">Дополнительная информация:</label><br>
+                <textarea name="about_me" id="about_me" cols="30" rows="5">Есть опыт программирования на C++</textarea>
+
+            <p><label for="secret_word">Секретное слово</label><br>
+                <input type="password" name="secret_word" id="secret_word" placeholder="&bull;&bull;&bull;&bull;&bull;&bull;&bull;&bull;&bull;&bull;">
+
+            <p><input type="submit" value="Отправить">
+                <input type="reset" value="Очистить">
+
+        </fieldset>
+    </form>
+
+</body>
+
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+</head>
+
+<body>
+    <form action="send.php" name="registration" method="POST">
+        <fieldset>
+            <legend>Регистрационная форма пользователя</legend>
+
+            <label for="name">Имя:</label>
+            <input id="name" name="name"></input>
+            <p>
+
+                <label for="old">Укажите возраст:</label>
+                <select name="old" id="old" size="1">
+                    <option selected disabled></option>
+                    <option value="10-15">10-15 лет</option>
+                    <option value="15-20">15-20 лет</option>
+                    <option value="20-30">20-30 лет</option>
+                    <option value="30-40">30-40 лет</option>
+                    <option value=">40">старше 40 лет</option>
+                </select>
+            
+            <p>Укажите пол:
+                <label><input type="radio" name="sex" value="M">мужской</label>
+                <label><input type="radio" name="sex" value="F">женский</label>
+
+            <p>Страна проживания:
+                <select name="residents" id="residents" size="1">
+                    <option selected value="RB">Беларусь</option>
+                    <option value="RF">Российская Федерация</option>
+                    <option value="other">Другое государство</option>
+                </select>
+
+            <p>Владение языками:
+                <label for="rus">русский</label>
+                <input type="checkbox" name="language" value="RUS" id="rus">
+                <label for="blr">белорусский</label>
+                <input type="checkbox" name="language" value="BLR" id="blr">
+                <label for="eng">английский</label>
+                <input type="checkbox" name="language" value="ENG" id="eng">
+            
+            <p>Фото профиля:
+                <input type="file" name="image">
+
+            <p><label for="login">Введите логин:</label>
+                <input id="login" name="login"></input>
+
+            <p><label for="pass">Введите пароль:</label>
+                <input id="pass" name="pass"></input>
+            
+            <p><label for="re_pass">Повторите пароль:</label>
+                <input id="re_pass" name="re_pass"></input>
+        </fieldset>
+        <p> <input type="reset" value="Сброс">
+            <input type="submit" value="Отправить">
+    </form>
+
+</body>
+
+</html>
