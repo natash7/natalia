@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <script src="form2.js"></script>
+</head>
+
+<body>
+    <h2>
+        <center>АНКЕТА</center>
+    </h2>
+    <form action="send.php" method="POST" name="Profile" autocomplete="off">
+        <fieldset>
+            <p>Фамилия <input type="text" name="surname">
+            <p>Имя <input type="text" name="name">
+            <p>Отчество <input type="text" name="middle_name">
+            <p>О себе сообщаю следующие сведения:</p>
+            <p>Пол <input type="radio" name="sex" value="1">Мужской
+                <input type="radio" name="sex" value="2">Женский
+            <p>Дата рождения <input type="date" name="date_of_birth">
+            <p>Количество полных лет <input type="number" name="age" value="18" min="18" max="63">
+            <p>Адрес места жительства (пребывания) <input type="text" name="address">
+            <p>Номер контактного телефона <label for="pref">+375</label>
+                <input id="pref" type="tel" name="phone_number" pattern="[0-9]{9}">
+            <p>Контактный e-mail <input type="email" name="email">
+            <p>Контактный e-mail <input type="email" name="email">
+            <p>Образование <br>
+                <input type="radio" name="education" value="1">основное общее среднее профессиональное;<br>
+                <input type="radio" name="education" value="2">среднее (полное) общее высшее профессиональное;<br>
+                <input type="radio" name="education" value="3">начальное профессиональное;<br>
+                <input type="radio" name="education" value="4">иное
+            <p>Профессия (специальность) <input type="text" name="profession">
+            <p>Стаж работы по специальности <select name="experience" size="1">
+                    <option selected value="1">Менее года</option>
+                    <option value="2">от 1 года до 3 лет</option>
+                    <option value="2">от 3 лет до 5 лет</option>
+                    <option value="2">от 5 лет до 10 лет</option>
+                    <option value="2">более 10 лет</option>
+                </select>
+            <p>Предыдущее место работы <input type="text" name="preplace_of_job">
+            <p>Период работы на предыдущем месте
+                <label for="from">с</label><input type="date" name="preplace_of_job_from" id="from">
+                <label for="to">по</label><input type="date" name="preplace_of_job_to" id="to">
+            <p><input type="reset" value="Очистить форму">
+                <input type="button" onclick="checkForm()" value="Отправить данные">
+        </fieldset>
+    </form>
+</body>
+
+</html>
