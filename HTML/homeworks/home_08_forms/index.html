@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Form</title>
 </head>
+
 <body>
 
     <form action="send.php" name="practic" method="POST" enctype="multipart/form-data">
@@ -12,7 +14,7 @@
             <legend>Многострочные текстовые поля</legend>
             <label for="about">Введите текст</label>
             <textarea name="about_me" id="about" cols="30" rows="10" autofocus></textarea>
-            
+
             <textarea name="about_you" cols="30" rows="10" placeholder="введите текст"></textarea>
         </fieldset>
 
@@ -21,23 +23,27 @@
             <label for="students">Выберите пункт</label>
             <select name="students" id="students" size="7" multiple>
                 <optgroup label="Студент">
-                <option value="1">Алексей</option>
-                <option value="3">Сергей</option>
-                <option value="4">Игорь</option>
-                <option value="6">Евгения</option>
-                <option value="7" selected>Наталья</option>
-                <option value="8">Серега</option></optgroup>
+                    <option value="1">Алексей</option>
+                    <option value="3">Сергей</option>
+                    <option value="4">Игорь</option>
+                    <option value="6">Евгения</option>
+                    <option value="7" selected>Наталья</option>
+                    <option value="8">Серега</option>
+                </optgroup>
             </select>
 
             <select name="teachers" id="teachers" size="2">
                 <optgroup label="Преподаватель">
-                <option value="1">Иван</option>
-                <option value="2">Алексей</option>
-                <option value="3">Евгений</option></optgroup>
+                    <option value="1">Иван</option>
+                    <option value="2">Алексей</option>
+                    <option value="3">Евгений</option>
+                </optgroup>
             </select>
+            
         </fieldset>
-
+        
     </form>
-    
+
 </body>
+
 </html>
