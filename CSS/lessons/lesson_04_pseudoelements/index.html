@@ -1,0 +1,49 @@
+<!DOCTYPE HTML>
+<html>
+ <head>
+  <meta charset="utf-8">
+  <title>Псевдоэлементы</title>
+  <style>
+   UL {
+    padding-left: 0; /* Убираем отступ слева */
+    list-style-type: none; /* Прячем маркеры списка */
+   }
+   LI::before {
+    content: "\20aa "; /* Добавляем перед элементом списка символ в юникоде */
+   }
+   p.one::first-letter {
+       color: green;
+       font-size: 20px;
+   }
+   p.two {
+       color: darkblue;
+       font-size: 20px;
+       letter-spacing: 0.6em;
+       word-spacing: 10px;
+       line-height: 2;
+       text-indent: 30px;
+       white-space: normal;
+       font-size: xx-large;
+       font-style: oblique;
+   }
+   p.two::first-line {
+       background-color: papayawhip;
+       font-style: italic;
+   }
+  </style>
+ </head>
+ <body>
+     <p class="one">Привет!</p> <br>
+     <p class="two">Lorem ipsum dolor sit amet, 
+          consectetur adipisicing elit. 
+        Animi blanditiis pariatur, <br> accusantium voluptatibus nisi provident, 
+        ratione eveniet corrupti dignissimos quae id  <br> dolor illum nemo rem perferendis 
+        aperiam quisquam! Ratione, ea?</p>
+  <ul>
+   <li>Чебурашка</li>
+   <li>Крокодил Гена</li>
+   <li>Шапокляк</li>
+   <li>Крыса Лариса</li>
+  </ul>
+ </body>
+</html>
