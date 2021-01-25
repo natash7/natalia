@@ -1,0 +1,20 @@
+ol {
+    list-style-type: none; /* Убираем исходные маркеры */
+    counter-reset:  item; /* Обнуляем счетчик списка */
+   }
+   li:before {
+    content: counter(item) ') '; /* Добавляем к числам скобку */
+    counter-increment: item; /* Задаём имя счетчика */
+   }
+
+.up {
+    vertical-align: super;
+}
+
+.down {
+    vertical-align: sub;
+}
+
+.up, .down {
+    font-size:10px;
+}
