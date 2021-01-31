@@ -1,7 +1,10 @@
-body, div {
+body {
+    min-height: 100vh;
+    width: 100vh;
     display: flex;
     justify-content: center;
-    align-items: center;            
+    align-items: center; 
+    margin: 0 auto;     /*Кнопка в центре экрана. для этого мин высота боди = высоте экрана. и ширину тоже задайте максимум на экран*/      
 }
 
 div {
@@ -10,8 +13,9 @@ div {
     border: 1px solid green;
     background-color: green;
     word-spacing: 30px;
-    font-size: 26px;
+    font-size: 28px;
     border-radius: 10px;
     box-shadow: 10px 10px 2px darkred;
-    margin-top: 50px;
+    text-align: center;
+    vertical-align: middle;
 }
