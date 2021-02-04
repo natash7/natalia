@@ -1,0 +1,91 @@
+body {                             
+    max-width: 100vw;               
+    min-height: 100vh;              
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    max-height: 100vh;   /*написала max вместо min-height для наглядности в браузере при открытии*/
+    display: grid;
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 10px;
+    text-align: center; 
+}
+
+nav, aside, footer {
+    color: white;
+}
+
+header {
+    grid-row: 1/2;
+    grid-column: 1/7;
+    background-color: #196D67;
+    display: flex;
+    justify-content: flex-end;
+}
+
+img {
+    width: 150px;
+    margin: 10px;
+}
+
+nav {
+    grid-row: 2/3;
+    grid-column: 1/7;
+    background-color: #130D3A;
+}
+
+article[class^="a-"] {
+    background-color: aqua;
+}
+
+.a-1 {
+    grid-row: 3/4;
+    grid-column: 1/4;
+}
+
+.a-2 {
+    grid-row: 3/4;
+    grid-column: 4/7;    
+}
+
+.left-panel {
+    grid-row: 4/5;
+    grid-column: 1/2;
+    background-color: blueviolet;
+}
+
+main {
+    grid-row: 4/5;
+    grid-column: 2/6;
+    background-color: white;
+}
+
+.right-panel {
+    grid-row: 4/5;
+    grid-column: 6/7;
+    background-color: blueviolet;
+}
+
+.a-3 {
+    grid-row: 5/6;
+    grid-column: 1/3;
+}
+
+.a-4 {
+    grid-row: 5/6;
+    grid-column: 3/5;
+}
+
+.a-5 {
+    grid-row: 5/6;
+    grid-column: 5/7;
+}
+
+footer {
+    grid-row: 6/7;
+    grid-column: 1/7;
+    background-color: #144478;
+}
