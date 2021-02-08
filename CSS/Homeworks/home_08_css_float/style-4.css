@@ -1,0 +1,28 @@
+div {
+    width: 1000px;
+    height: 100px;
+    border: 1px solid lightskyblue;
+    border-radius: 5px;
+    background-color: lightblue;
+    font-family: Arial, Helvetica, sans-serif;
+}        
+    
+.lock {
+    float: left;
+    margin: 25px;
+}
+
+.close {
+    float: right;
+    margin: 30px 15px;    
+}  
+
+.one {    
+    color: blue;
+    font-size: 18px;
+    font-weight: bold;
+    } 
+
+.two {
+    color: green;
+}            

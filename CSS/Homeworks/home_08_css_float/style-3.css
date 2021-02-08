@@ -1,0 +1,21 @@
+body {
+    background-color: gray;
+}
+
+div {
+    width: 300px;
+    height: 100px;
+    border-radius: 10px;
+    background-color: green;
+    box-shadow: 10px 10px 2px darkred;
+    position: relative;
+    margin: 0 auto;
+}    
+
+p { position: absolute;
+    font-size: 24px;
+    word-spacing: 30px;
+    top: 10px;
+    left: 40px;
+    
+}
