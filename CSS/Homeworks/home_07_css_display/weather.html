@@ -1,48 +1,51 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
 	<meta charset="UTF-8">
 	<title>weather</title>
 	<style>
-		div { 
+		div {
 			display: inline-block;
 			height: 170px;
 			width: 100px;
 		}
 
 		div:hover {
-			box-shadow: 0 0 10px rgba(0,0,0,0.5);
-        }
-        
-        .one {
-            background-image: url(weather-sun.jpg);
-        }
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+		}
 
-        .two {
-            background-image: url(weather-snow.jpg);
-        }
+		.one {
+			background-image: url(weather-sun.jpg);
+		}
 
-        .three {
-            background-image: url(weather-blizzard.jpg);
-        }
+		.two {
+			background-image: url(weather-snow.jpg);
+		}
 
-        .one, .two, .three {
-            background-repeat: no-repeat;
-            background-position: center;
-            background-size: contain; 
-        }      
+		.three {
+			background-image: url(weather-blizzard.jpg);
+		}
+
+		.one,
+		.two,
+		.three {
+			background-repeat: no-repeat;
+			background-position: center;
+			background-size: contain;
+		}
 
 		span {
 			display: block;
 			text-align: center;
-            height: 15%;
+			height: 15%;
 		}
 
 		.data {
 			background-color: lightblue;
 			color: white;
 			font-size: 20px;
-        }
+		}
 
 		.temp {
 			font-size: 24px;
@@ -50,12 +53,13 @@
 		}
 	</style>
 </head>
+
 <body>
 	<div class="one">
 		<span class="data">31.08</span>
 		<span class="temp"> +20&#176 </span>
 	</div>
-	
+
 	<div class="two">
 		<span class="data">01.09</span>
 		<span class="temp"> -3&#176 </span>
@@ -66,4 +70,5 @@
 		<span class="temp"> -10&#176 </span>
 	</div>
 </body>
+
 </html>
