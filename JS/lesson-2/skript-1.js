@@ -1,3 +1,3 @@
 let admin = 'Джон';
-let name = 'Джон';
-alert(admin);
+let name = admin;
+alert(name); //вывелось Джон
