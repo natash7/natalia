@@ -15,7 +15,7 @@
         let userWhidthImg = prompt('Какова ширина Ваших изображений в пикселях?', 246);
         let userQuantityImgInRow = Math.floor(whidthPage / (+ userWhidthImg + marginImg));
         let userRows = Math.floor(userQuantityImg/userQuantityImgInRow);
-        let imgLastRow = userQuantityImg - (userQuantityImgInRow * userRows);
+        let imgLastRow = (userQuantityImg - (userQuantityImgInRow * userRows)) || userQuantityImgInRow;
         alert(`ширина окна 1024px,
             итого Ваших изображений ${userQuantityImg},
             ширина каждого изображения ${userWhidthImg},
