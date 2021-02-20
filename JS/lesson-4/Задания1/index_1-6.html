@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Задание 1-6</title>
+</head>
+<body>
+    <script>
+        'use strict'
+        let m = prompt('сколько долек в длину Ваша шоколадка','');
+        let n = prompt('сколько долек в ширину Ваша шоколадка', '');
+        let k = prompt('сколько долек желаете отломить одним разломом по прямой?', '');
+        if (k < m*n && k%n == 0 || k < m*n && k%m == 0) {
+            alert('можно, ломайте!');
+        } else {
+            alert('увы и ах (((')
+        }
+    </script>
+    
+</body>
+</html>

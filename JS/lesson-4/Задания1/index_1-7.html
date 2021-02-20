@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Задание 1-7</title>
+</head>
+<body>
+    <script>
+        'use strict';
+        let tripByTicket1 = 1, tripByTicket2 = 10, tripByTicket3 = 60, 
+        priceTicket1 = 15, priceTicket2 = 125, priceTicket3 = 440;
+        let n = prompt('сколько поездок Вы планируете совершить?','');
+        
+        //самое простое, но неоптимальное решение
+        let quantityTicket3 = Math.floor(n / tripByTicket3);
+        let quantityTicket2 = Math.floor((n - quantityTicket3 * tripByTicket3) / tripByTicket2);
+        let quantityTicket1 = (n - quantityTicket3 * tripByTicket3 - quantityTicket2 * tripByTicket2);
+        alert(`Вам необходимо приобрести:
+        ${quantityTicket3} билетов на 60 поездок,
+        ${quantityTicket2} билетов на 10 поездок,
+        ${quantityTicket1} билетов на одну поездку`)
+
+        // над оптимальным решением у меня выкипел мозг. всё - думать больше нечем.
+        // вернее решение я знаю, и купила бы билеты, затратив минимальное количество денег,
+        // но как оформить это - я убила три часа и не оформила.
+    </script>    
+    
+</body>
+</html>

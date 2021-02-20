@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Задание 1-3</title>
+</head>
+<body>
+    <script>
+        'use strict';
+        let userName = prompt('Представьтесь, пожалуйста', '');
+        let date = new Date();
+        let h = date.getHours(); 
+        if (h >= 6 && h <= 12) {
+            alert(`Доброе утро, ${userName}`);
+        } else if (h >= 13 && h <= 17) {
+            alert(`Добрый день, ${userName}`);
+        } else if (h >= 18 && h <= 23) {
+            alert(`Приятного вечера, ${userName}`);
+        } else if (h >= 0 && h <= 5) {
+            alert(`Не спится, ${userName}?`);
+        }
+    </script>    
+</body>
+</html>
