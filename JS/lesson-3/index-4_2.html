@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Задание4-б</title>
+</head>
+<body>
+    <script>
+        'use strict'
+        let whidthPage = 1024;
+        let marginImg = 5*2;
+        let userQuantityImg = prompt('Сколько изображений Вы хотите разместить?', 100);
+        let userWhidthImg = prompt('Какова ширина Ваших изображений в пикселях?', 246);
+        let userQuantityImgInRow = Math.floor(whidthPage / (+ userWhidthImg + marginImg));
+        let userRows = Math.floor(userQuantityImg/userQuantityImgInRow);
+        let imgLastRow = (userQuantityImg - (userQuantityImgInRow * userRows)) || userQuantityImgInRow;
+        alert(`ширина окна 1024px,
+            итого Ваших изображений ${userQuantityImg},
+            ширина каждого изображения ${userWhidthImg},
+            количество изображений в каждом ряду ${userQuantityImgInRow}, 
+            полных рядов в галерее  ${userRows},
+            количество изображений в последнем ряду ${imgLastRow}`);
+    </script>
+    
+</body>
+</html>
