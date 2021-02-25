@@ -9,9 +9,9 @@
 <body>
     <script>
         'use strict';
-        let tripByTicket1 = 1, tripByTicket2 = 10, tripByTicket3 = 60, 
+        const tripByTicket1 = 1, tripByTicket2 = 10, tripByTicket3 = 60, 
         priceTicket1 = 15, priceTicket2 = 125, priceTicket3 = 440;
-        let n = prompt('сколько поездок Вы планируете совершить?','');
+        const n = +prompt('сколько поездок Вы планируете совершить?','');
         
         //самое простое, но неоптимальное решение
         let quantityTicket3 = Math.floor(n / tripByTicket3);
