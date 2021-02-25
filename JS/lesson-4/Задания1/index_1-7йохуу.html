@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Задача 1-7</title>
+</head>
+<body>
+    <script>
+        'use strict';
+        const tripByTicket1 = 1, tripByTicket2 = 10, tripByTicket3 = 60, 
+        priceTicket1 = 15, priceTicket2 = 125, priceTicket3 = 440;
+        let n = +prompt('сколько поездок Вы планируете совершить?','');        
+        let quantityTicket3, quantityTicket2, quantityTicket1; 
+        let x = Math.ceil(n / tripByTicket3) * priceTicket3;
+        let y = Math.floor(n / tripByTicket3) * priceTicket3 + Math.ceil(n % 60 / tripByTicket2) * priceTicket2; 
+        let z = Math.floor(n / tripByTicket3) * priceTicket3 + 
+        Math.floor(n % 60 / tripByTicket2) * priceTicket2 + Math.ceil(n % 10) * priceTicket1; 
+        if (x <= y && x <= z) {
+            quantityTicket3 = Math.ceil(n / tripByTicket3), 
+            quantityTicket2 = 0, 
+            quantityTicket1 = 0;        
+        }
+        if (y <= x && y <= z) {
+            quantityTicket3 = Math.floor(n / tripByTicket3), 
+            quantityTicket2 = Math.ceil(n % tripByTicket3 / tripByTicket2), 
+            quantityTicket1 = 0       
+        }
+        if (z <= x && z <= y) {
+            quantityTicket3 = Math.floor(n / tripByTicket3), 
+            quantityTicket2 = Math.floor(n % tripByTicket3 / tripByTicket2), 
+            quantityTicket1 = Math.ceil(n % tripByTicket2);
+        }        
+        alert(`Вам необходимо приобрести:
+        ${quantityTicket3} билетов на ${tripByTicket3} поездок,
+        ${quantityTicket2} билетов на ${tripByTicket2} поездок;
+        ${quantityTicket1} билетов на ${tripByTicket1} поездку
+        Итого на сумму ${quantityTicket1 * priceTicket1 + quantityTicket2 * priceTicket2 + quantityTicket3 * priceTicket3} рублей.
+                                    И это минимальная стоимость!`);         
+    </script>        
+</body>
+</html>
