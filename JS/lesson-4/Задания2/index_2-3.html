@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Задача-3</title>
+</head>
+<body>
+    <script>
+        'use strict';
+        let userName = prompt('Представьтесь, пожалуйста', '');
+        let date = new Date();
+        let h = date.getHours(); 
+        switch (h) {      
+            case h = 6:case h = 7:case h = 8:case h = 9:case h = 10:case h = 11:case h = 12: 
+                alert(`Доброе утро, ${userName}`);
+                break;
+            case h = 13:case h = 14:case h = 15:case h = 16:case h = 17:
+                alert(`Добрый день, ${userName}`);
+                break;
+            case h = 18:case h = 19:case h = 20:case h = 21:case h = 22:case h = 23:
+                alert(`Приятного вечера, ${userName}`);
+                break;
+            case h = 0:case h = 1:case h = 2:case h = 3:case h = 4:case h = 5:
+                alert(`Не спится, ${userName}?`);
+                break;           
+            }
+    </script>
+    
+</body>
+</html>
