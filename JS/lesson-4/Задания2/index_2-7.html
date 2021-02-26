@@ -10,7 +10,6 @@
     <script>
         'use strict';
         let number = +prompt ('Введитие число от 100 до 999', ''); 
-
         let num;
         let p3 = Math.floor(number / 100); 
         let p2 = Math.floor ((number - p3 * 100) / 10); 
@@ -104,11 +103,13 @@
     }
         if (p2 = 1) {       
             switch (x) {
+                case 10:
+                    num = `${num} десять`
+                    break;
                 case 11:
                     num = `${num} одиннадцать`;
                     break;
-                case 12:
-            
+                case 12:            
                     num = `${num} двенадцать`;
                     break;
                 case 13:            
